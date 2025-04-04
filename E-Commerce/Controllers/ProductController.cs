@@ -10,6 +10,7 @@ using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace E_Commerce.Controllers
 {
+	[EnableRateLimiting("UserLimiter")]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase

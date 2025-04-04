@@ -6,6 +6,7 @@ using System.Diagnostics;
 
 namespace E_Commerce.Controllers
 {
+	[EnableRateLimiting("UserLimiter")]
     [Route("api/[controller]")]
     [ApiController]
     public class SupplierController : ControllerBase

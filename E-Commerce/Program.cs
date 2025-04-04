@@ -118,6 +118,7 @@ namespace E_Commerce
 
             app.UseAuthorization();
             app.UseAuthentication();
+            app.UseRateLimiter();
 
 
             app.MapControllers();

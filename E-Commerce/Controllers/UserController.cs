@@ -7,6 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace E_Commerce.Controllers
 {
+	[EnableRateLimiting("UserLimiter")]
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
